@@ -1,0 +1,268 @@
+/*----------------------
+ Base Element Styles
+ -----------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F2F4F4;
+    text-align: center;
+}
+
+img {
+    max-width: 80%;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: 'Times';
+    text-transform: uppercase;
+}
+
+h2 {
+    padding: 30px 0 20px;
+    text-transform: uppercase;
+    font-size: 1.7em;
+}
+h3 {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+p {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    font-size: .8em;
+}
+
+a {
+    color: #17202A;
+}
+
+main {
+    border-top: solid 5px #922B21;
+    margin-top: 40px;
+    border-bottom: solid 5px #922B21;
+    padding-bottom: 40px;
+}
+
+/*----------------------
+Base Layout Styles
+-----------------------*/
+
+.main-nav {
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    margin-bottom: 40px;
+    padding-right: 30px;
+    font-weight: bold;
+    font-family: 'Times';
+}
+
+.main-nav a {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+}
+
+.main-nav li {
+    background-color: #FDFEFE;
+}
+
+.footer-left-nav {
+    width: 90%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    }
+
+.footer-left-nav li {
+    margin: 16px 0;
+    float: right;
+}
+
+.footer-left-nav h3 {
+    float: left;
+}
+
+.main-nav a:hover,
+.footer-left-nav a:hover,
+.footer-right-nav a:hover {
+    color: #EC7063;
+}
+
+.footer-right-nav {
+    display: none;
+}
+
+/*------- Layout Containers -------*/
+
+.name {
+    margin-top: 60px;
+}
+
+.wrapper {
+    padding: 0 20px;
+}
+
+.portfolio-div {
+    padding-bottom: 10px;
+    background-color: #FDFEFE;
+    max-width: 768px;
+}
+
+.skills {
+    width: 100%;
+    background: #343B75;
+    color: #BA4A00;
+}
+
+.skills li {
+    display: inline-block;
+    padding: 20px 20px;
+    text-align:justify;
+}
+
+/*-------- Float Clearfix --------*/
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*----------------------
+Media Queries
+-----------------------*/
+
+@media (min-width: 768px) {
+
+    body {
+        width: 90%;
+        max-width: 768px;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        background-color: inherit;
+    }
+
+    .banner {
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .banner img {
+        float: right;
+        width: 40%;
+    }
+
+    .banner p {
+        float: left;
+        width: 60%;
+        padding-right: 12px;
+        position: absolute;
+        top: 15%;
+        text-align: left;
+        font-size: 1em;
+    }
+
+    .col {
+        max-width: 50%;
+        float: right;
+        margin: auto;
+      }
+
+    .col p {
+        padding: 0 30px 10px;
+    }
+
+    .contact {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .footer-left-nav {
+        display: none;
+    }
+
+    .footer-right-nav {
+        display: block;
+        text-transform: uppercase;
+    }
+
+    .footer-right-nav ul {
+        float: right;
+    }
+
+    .footer-right-nav h3 {
+        float: left;
+    }
+
+    .footer-right-nav li {
+        display: inline-block;
+        padding-left: 10px;
+        margin: -50px 0;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        width: 80%;
+        max-width: 1300px;
+    }
+
+    .name {
+        float: left;
+        padding-left: 12px;
+    }
+
+    .main-nav {
+        float: right;
+        margin-top: 40px;
+        padding: 0 18px;
+    }
+
+    .main-nav li {
+        margin-left: -10px;
+    }
+
+    .banner {
+        padding: 0 32px 20px;
+    }
+
+    .banner p {
+        font-size: 1.2em;
+        position: absolute;
+        top: 10%;
+        width: 55%;
+    }
+
+    .portfolio-div {
+        max-width: 100%;
+    }
+
+    .col {
+        max-width: 33%;
+        float: right;
+        margin: auto;
+        padding-bottom: 10px;
+      }
+
+}
